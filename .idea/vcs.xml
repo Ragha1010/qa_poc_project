@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/asio/asio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/bootloader/subproject/components/micro-ecc/micro-ecc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/bt/controller/lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/bt/host/nimble/nimble" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/cbor/tinycbor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/coap/libcoap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/coap/libcoap/ext/tinydtls" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/esp_wifi/lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/esptool_py/esptool" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/expat/expat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/json/cJSON" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/libsodium/libsodium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/lwip/lwip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/mqtt/esp-mqtt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/nghttp/nghttp2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/nghttp/nghttp2/third-party/mruby" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/nghttp/nghttp2/third-party/neverbleed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/protobuf-c/protobuf-c" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/spiffs/spiffs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/tinyusb/tinyusb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/components/unity/unity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/examples/build_system/cmake/import_lib/main/lib/tinyxml2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esp-afr-sdk/examples/peripherals/secure_element/atecc608_ecdsa/components/esp-cryptoauthlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/features/steps/device_lib/esptool_release_v3" vcs="Git" />
+  </component>
+</project>

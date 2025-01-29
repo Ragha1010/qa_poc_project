@@ -1,0 +1,32 @@
+{
+    "write_flash_args" : [ "--flash_mode", "dio",
+                           "--flash_size", "detect",
+                           "--flash_freq", "40m" ],
+    "flash_settings" : {
+        "flash_mode": "dio",
+        "flash_size": "detect",
+        "flash_freq": "40m"
+    },
+    "flash_files_v3" : {
+        "0x9000" : "resources/partition_table_v3.bin",
+        "0x40a000" : "resources/ota_data_initial.bin",
+        "0x1000" : "resources/bootloader_v3.bin",
+        "0x410000" : "build/si_app.bin"
+    },
+    "flash_files_v4" : {
+        "0xc000" : "resources/partition_table_v4.bin",
+        "0xd000" : "resources/ota_data_initial.bin",
+        "0x1000" : "resources/bootloader_v4.bin",
+        "0x10000" : "build/si_app.bin"
+    },
+    "partition_table" : { "offset" : "0xc000", "file" : "resources/partition-table.bin" },
+    "otadata" : { "offset" : "0xd000", "file" : "resources/ota_data_initial.bin" },
+    "bootloader" : { "offset" : "0x1000", "file" : "resources/bootloader.bin" },
+    "app" : { "offset" : "0x10000", "file" : "si_app.bin" },
+    "extra_esptool_args" : {
+        "after"  : "hard_reset",
+        "before" : "default_reset",
+        "stub"   : true,
+        "chip"   : "esp32"
+    }
+}

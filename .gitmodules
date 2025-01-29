@@ -1,0 +1,4 @@
+[submodule "device_lib"]
+	path = features/steps/device_lib
+	url = ../device-lib.git
+	branch = qa-test

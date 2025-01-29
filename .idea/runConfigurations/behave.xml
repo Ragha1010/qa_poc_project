@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="behave" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <module name="sentry-qa" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="IDF_PATH" value="$PROJECT_DIR$/../sentry-qa\features\steps\device_lib\esp-afr-sdk" />
+    </envs>
+    <option name="SDK_HOME" value="C:\work\ARTF\sentry-qa\.venv\Scripts\python.exe" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <option name="SCRIPT_NAME" value="behave" />
+    <option name="PARAMETERS" value="--tags=fleet_Hub_test -D partition_version=4 -D job_id=4566361685 -D gitlab_proj='sentry-interface'" />
+    <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="true" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>

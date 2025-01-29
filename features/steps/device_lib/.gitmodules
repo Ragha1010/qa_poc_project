@@ -1,0 +1,8 @@
+[submodule "esp-afr-sdk"]
+	path = esp-afr-sdk
+	url = ../esp-afr-sdk.git
+	branch = release/esys-v4.2
+[submodule "esptool_release_v3"]
+	path = esptool_release_v3
+	url = https://github.com/espressif/esptool.git
+	branch = release/v3

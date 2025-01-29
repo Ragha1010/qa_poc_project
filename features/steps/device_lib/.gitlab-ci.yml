@@ -1,0 +1,33 @@
+.shared_windows_runners:
+  tags:
+    - shared-windows
+    - windows
+    - windows-1809
+
+stages:
+  - build
+
+build-job:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  extends:
+    - .shared_windows_runners
+  stage: build
+  script:
+    - dir
+    - dir .\esptool_release_v3
+    - echo "Build Python scripts to Windows executable files"
+    - choco install python --version=3.10.0 --yes --force --no-progress
+    - refreshenv
+    - "C:\\Python310\\python.exe -V"
+    - "C:\\Python310\\python.exe -m pip install --upgrade pip"
+    - "C:\\Python310\\python.exe -m pip install -r requirements.txt"
+    - "C:\\Python310\\python.exe -m pip list"
+    - "C:\\Python310\\Scripts\\pyinstaller.exe --onefile --hidden-import configparser --hidden-import esp-afr-sdk.components.nvs_flash.nvs_partition_generator.nvs_partition_gen --paths .\\esp-afr-sdk\\components\\nvs_flash\\nvs_partition_generator start_ota.py"
+    - "C:\\Python310\\Scripts\\pyinstaller.exe --onefile --hidden-import configparser --hidden-import esptool --hidden-import nvs_partition_gen --hidden-import esp-afr-sdk.components.nvs_flash.nvs_partition_generator.nvs_partition_gen --paths .\\esp-afr-sdk\\components\\nvs_flash\\nvs_partition_generator --paths .\\esptool_release_v3 provision.py "
+    - "C:\\Python310\\Scripts\\pyinstaller.exe --onefile --hidden-import esptool --hidden-import esp-afr-sdk.components.nvs_flash.nvs_partition_generator.nvs_partition_gen --paths .\\esp-afr-sdk\\components\\nvs_flash\\nvs_partition_generator --paths .\\esptool_release_v3 flash.py"
+    - "C:\\Python310\\Scripts\\pyinstaller.exe --onefile --hidden-import esptool --hidden-import espefuse --hidden-import esp-afr-sdk.components.nvs_flash.nvs_partition_generator.nvs_partition_gen --paths .\\esp-afr-sdk\\components\\nvs_flash\\nvs_partition_generator --paths .\\esptool_release_v3 mac.py"
+  artifacts:
+    paths:
+      - dist/*.exe
+   
